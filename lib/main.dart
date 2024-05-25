@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:untitled3/home.dart';
+import 'package:untitled3/discription.dart';
+import 'package:untitled3/icons.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,11 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Login & Registration',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: BottomNavigationBarExampleApp(),
     );
   }
 }
